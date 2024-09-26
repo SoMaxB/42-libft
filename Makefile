@@ -34,7 +34,7 @@ SRC			= 	ft_atoi.c \
 				ft_tolower.c \
 				ft_toupper.c \
 
-SRC_Bonus	=	ft_lstnew.c \
+SRC_BONUS	=	ft_lstnew.c \
 				ft_lstadd_front.c \
 				ft_lstsize.c \
 				ft_lstlast.c \
@@ -44,10 +44,10 @@ SRC_Bonus	=	ft_lstnew.c \
 				ft_lstiter.c \
 				ft_lstmap.c \
 
-OBJ			:= $(SRC:.c=%.o)
+OBJ			:= $(SRC:.c=.o)
 OBJ_BONUS	= $(SRC_BONUS:.c=.o)
 
-CFLAGS	= -Wall -Werror -Wextra
+CFLAGS		= -Wall -Werror -Wextra
 
 all: $(NAME)
 
