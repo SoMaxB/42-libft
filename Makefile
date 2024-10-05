@@ -58,7 +58,7 @@ $(NAME): $(OBJ)
 	gcc -c $(CFLAGS) -c $< -o $@
 
 bonus: $(OBJ) $(OBJ_BONUS)
-	ar rcs $(NAME).a $(OBJ) $(OBJ_BONUS)
+	ar rcs $(NAME) $(OBJ) $(OBJ_BONUS)
 
 clean:
 	rm -f $(OBJ) $(OBJ_BONUS)
